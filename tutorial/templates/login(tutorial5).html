@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- using the GEI method to send form data to a URL-->
+    <form action = "http://localhost:5000/login_division/" method = "get">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "name" /></p>
+         <p><input type = "submit" name="get" value = "get method" /></p>
+         <!-- the value attribute of 'submit' is used to display. -->
+    </form>
+    <!-- using the POST method to send form data to a URL-->
+    <form action = "http://localhost:5000/login_division/" method = "post">
+         <p>Enter Name:</p>
+         <p><input type = "text" name = "name" /></p>
+         <p><input type = "submit" name="post" value = "post method" /></p>
+         <!-- the value attribute of 'submit' is used to display. -->
+    </form>
+</body>
+</html>
