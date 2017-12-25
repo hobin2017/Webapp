@@ -6,11 +6,11 @@ And then one or more keyword arguments(they correspond to the variable part of U
 from flask import Flask, redirect, url_for
 app = Flask(__name__)
 
-@app.route('/admin/')
+@app.route('/user/admin/')
 def hello_admin():
    return 'Hello Admin'
 
-@app.route('/guest/<guest>/')
+@app.route('/user/guest/<guest>/')
 def hello_guest(guest):
    return 'Hello %s as Guest' % guest
 
