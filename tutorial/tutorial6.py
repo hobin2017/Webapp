@@ -13,8 +13,8 @@ def hello_world():
 
 @app.route('/hello/<user>/')
 def hello_name(user):
-    # the parameter 'param1' corresponds to {{ param1 }} in hello1(tutorial6).html;
-    return render_template('hello1(tutorial6).html', param1=user)
+    # the parameter 'param1' corresponds to {{ param1 }} in hello(tutorial6).html;
+    return render_template('hello(tutorial6).html', param1=user)
 
 
 if __name__ == '__main__':
