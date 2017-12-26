@@ -15,12 +15,12 @@ def success(name):
 @app.route('/login_division/', methods=['POST', 'GET'])
 def login_division():
     if request.method == 'POST':
+        # request.form is dictionary object containing a list of pairs of form parameter and its corresponding value.
         user = request.form['name'] # the parameter corresponds to the form element of the first form!
         return redirect(url_for('success', name=user))
-    elif request.method == 'GET':
+    elif request.method == 'GET': # What if you enter the link directly?
         # the GET still can pass data, which is like POST!.
-        # request.args is dictionary object containing a list of pairs of form parameter and its corresponding value.
-        user = request.args.get('name') # What if you enter the link directly?
+        user = request.args.get('name') # the parameter corresponds to the form element of the first form!
         return redirect(url_for('success', name=user))
 
 # The below binding utilizes the advantage of tutorial6
