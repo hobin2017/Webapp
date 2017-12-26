@@ -16,11 +16,11 @@ def success(name):
 def login_division():
     if request.method == 'POST':
         # request.form is dictionary object containing a list of pairs of form parameter and its corresponding value.
-        user = request.form['name'] # the parameter corresponds to the form element of the first form!
+        user = request.form['name'] # the parameter corresponds to the form element of the second form!
         return redirect(url_for('success', name=user))
     elif request.method == 'GET': # What if you enter the link directly?
         # the GET still can pass data, which is like POST!.
-        user = request.args.get('name') # the parameter corresponds to the form element of the second form!
+        user = request.args.get('name') # the parameter corresponds to the form element of the first form!
         return redirect(url_for('success', name=user))
 
 # The below binding utilizes the advantage of tutorial6
