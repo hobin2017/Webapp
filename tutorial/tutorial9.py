@@ -30,7 +30,7 @@ def login():
       <p><input type = text name = username /></p>
       <p><input type = submit value = Login /></p>
    </form>
-   ''' # clicking on the button will visit the '/login' 
+   ''' # clicking on the button will visit the url where the button stays.
 
 @app.route('/logout')
 def logout():
