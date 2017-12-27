@@ -2,7 +2,7 @@
 It is possible to return the value in the form of HTML.
 Flask will try to find the HTML file in the 'templates' folder;
 The 'templates' folder should go with this python script in the same folder;
-by using render_template(), the Jinga2 template engine might cause some difference in HTML syntax;
+by using render_template(), the Jinga2 template engine will turn the initial HTML into the final HTML;
 """
 from flask import Flask, render_template
 app = Flask(__name__)
