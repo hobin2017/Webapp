@@ -20,6 +20,8 @@ def upload_file():
         f.save(secure_filename(f.filename))
         return '''file uploaded successfully
         '''
+    else:
+        return ''
 
 
 if __name__ == '__main__':
