@@ -18,7 +18,8 @@ def login_division():
         # request.form is dictionary object containing a list of pairs of form parameter and its corresponding value.
         user = request.form['name'] # the parameter corresponds to the form element of the second form!
         return redirect(url_for('success', name=user))
-    elif request.method == 'GET': # What if you enter the link directly?
+    elif request.method == 'GET':
+        # If you visit the link directly, enter 127.0.0.1:5000/login_division/?name=hobin 
         # the GET still can pass data, which is like POST!.
         user = request.args.get('name') # the parameter corresponds to the form element of the first form!
         return redirect(url_for('success', name=user))
