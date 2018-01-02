@@ -1,6 +1,7 @@
 """
 Each uploaded file is first saved in a temporary location on the server, before it is actually saved to its ultimate location.
 It is recommended to obtain a secure version of the file name by using the secure_filename() function
+The secure_filename() will delete the suffix of the filename if the filename has the suffix;
 """
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
