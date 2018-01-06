@@ -1,5 +1,5 @@
 """
-Aims: using the history property of the Response objects to track redirection;
+Aims: using the history attribute of the Response objects to track redirection;
 The history property will return a list of Response objects which is sorted from the oldest to the most recent response;
 The redirection actually is another HTTP GET;
 It is given in P16.
