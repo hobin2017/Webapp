@@ -1,5 +1,5 @@
 """
-Aim: to do some extra work to the body or headers before sending a request.
+Aim: using PreparedRequest object and send() to sent the request
 Procedure: the requests package firstly constructs a Request object and then turns it to the PreparedRequest.
 The PreparedRequest object contains the binary data that will be sent to the server.
 P.S.:
