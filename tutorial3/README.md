@@ -11,4 +11,4 @@ Summary:
 7. to avoid that your program might hang indefinitely;
 8. using the session object in client;
 9. using PreparedRequest object and send() to sent the request;
-10. 
+10. send json by http-body in http-get
