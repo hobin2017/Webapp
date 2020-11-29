@@ -1,6 +1,6 @@
 """
-   aim: send json in http-body with get method
-   If use query string to send json data, one problem is the maximum length of the url. Sending json in the http-body
+   aim: send data by http-body and query-string
+   If using query string to send json data, one problem is the maximum length of the url. Sending json in the http-body
 does not have this problem. Also, it is not convenient to construct a dictionary or a list in query string.
 """
 
@@ -12,6 +12,7 @@ __body = {
     'param2': {'1': 1, '2': 2},
 }
 __qry = {'job_name': 'jenkins_job', 'build_status': '-1', 'msg4print': "success build"}
+# params: query-string
 resp = requests.get(__url, params=__qry, json=__body)
 print(resp.text)
 
