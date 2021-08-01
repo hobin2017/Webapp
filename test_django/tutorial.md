@@ -8,6 +8,27 @@ python manage.py startapp ${app_name}
 ```
 
 - [part 2, orm and database](https://docs.djangoproject.com/en/2.2/intro/tutorial02/)
+```python
+from django.db import models
+
+class Table01(models.Model):
+    # The primary key is the id column that is created by default
+    column01 = models.CharField(max_length=200)
+    column02 = models.CharField(max_length=200)
+
+
+# select
+_val = Table01.objects.filter(column01='1')
+print(_val)
+# insert
+new_row = Table01(column01='1', column02='2')
+new_row.save()
+# update
+new_row.column01 = '11'
+new_row.save()
+# delete
+new_row.delete()
+```
 ```shell script
 python manage.py migrate
 python manage.py makemigration polls
